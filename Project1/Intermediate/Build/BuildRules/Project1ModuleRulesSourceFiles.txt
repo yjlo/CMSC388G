@@ -1,3 +1,3 @@
-C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Source\Project1\Project1.Build.cs
-C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Source\Project1.Target.cs
-C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Source\Project1Editor.Target.cs
+C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Source\Project1\Project1.Build.cs
+C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Source\Project1.Target.cs
+C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Source\Project1Editor.Target.cs

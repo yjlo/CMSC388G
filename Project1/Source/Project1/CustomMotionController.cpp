@@ -2,6 +2,7 @@
 
 #include "CustomMotionController.h"
 #include "Components/SplineMeshComponent.h"
+#include "Components/SplineComponent.h"
 #include "Engine/Engine.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "Kismet/GameplayStatics.h"
@@ -18,6 +19,17 @@ ACustomMotionController::ACustomMotionController()
 void ACustomMotionController::ClearArc()
 {
 	//TODO - Clear blue laser arc every frame
+	USplineComponent* Spline = FindComponentByClass<USplineComponent>();
+	if (Spline != nullptr) {
+		Spline->ClearSplinePoints();
+	}
+
+	TArray<USplineMeshComponent*> SplineMeshes;
+	GetComponents<USplineMeshComponent>(SplineMeshes, true);
+	for (USplineMeshComponent* s : SplineMeshes) {
+		s->DestroyComponent();
+	}
+
 }
 
 AActor* ACustomMotionController::GetActorNearHand()

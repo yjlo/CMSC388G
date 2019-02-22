@@ -189,11 +189,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/I "C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine"
-/Yc"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.cpp"
-/Fo"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G---Virtual-Reality-Game-Development-Class-Examples-\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.obj"
+/I "C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine"
+/Yc"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.cpp"
+/Fo"C:\Users\Rift User\Desktop\Yan-Jen Lo (CMSC388G)\CMSC388G\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.obj"
 /TP
 /GR-
 /W4
