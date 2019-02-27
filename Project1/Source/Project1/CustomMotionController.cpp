@@ -8,6 +8,8 @@
 #include "Kismet/GameplayStatics.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "CustomPickupActorInterface.h"
+#include "Components/SphereComponent.h"
 
 // Sets default values
 ACustomMotionController::ACustomMotionController()
@@ -35,7 +37,26 @@ void ACustomMotionController::ClearArc()
 AActor* ACustomMotionController::GetActorNearHand()
 {
 	//TODO - Do something other than return null
-	return nullptr;
+	TArray<AActor*> OverlappingActorsOfSphere;
+	GetOverlappingActors(OverlappingActorsOfSphere);
+	USphereComponent* GrabSphere = FindComponentByClass<USphereComponent>();
+	FVector GrabSphereLocation = GrabSphere->GetComponentLocation();
+	float shortest_distance = 10000;
+	AActor* NearestOverlappingActor = nullptr;
+	for (AActor* OverlappingActor : OverlappingActorsOfSphere) {
+		bool ActorOfPickUpType = UKismetSystemLibrary::DoesImplementInterface(OverlappingActor,TSubclassOf<UCustomPickupActorInterface>());
+		if (ActorOfPickUpType == true)
+		{
+			FVector OverlappingActorLocation = OverlappingActor->GetActorLocation();
+			float distance = FVector::Dist(OverlappingActorLocation, GrabSphereLocation);
+			if (distance < shortest_distance)
+			{
+				shortest_distance = FVector::Dist(OverlappingActorLocation, GrabSphereLocation);
+				NearestOverlappingActor = OverlappingActor;
+			}
+		}
+	}
+	return NearestOverlappingActor;
 }
 
 //Blueprint function that is converted to C++ for your convenience.
