@@ -3,13 +3,13 @@
    Answer: AActor
 
 2) In the MotionControllerActor blueprint:
-  * In what commented node section is "Clear Arc"?
+     * In what commented node section is "Clear Arc"?
 
-   Answer: BP_MotionController -> Handle Teleportation Arc
+      Answer: BP_MotionController -> Handle Teleportation Arc
 
-  * What about GetActorNearHand()?
+     * What about GetActorNearHand()?
 
-   Answer: BP_MotionController -> Update Animation of Hand
+      Answer: BP_MotionController -> Update Animation of Hand
 
 3) What is the point of the "CustomPickupActorInterface" class? (This should be very brief, 2-3 sentences)
 
