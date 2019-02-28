@@ -26,11 +26,15 @@ APickupCube::APickupCube()
 void APickupCube::Pickup_Implementation(USceneComponent* AttachTo)
 {
 	//TODO - Implement Pickup call
-	GetRootComponent()->AttachToComponent(AttachTo,FAttachmentTransformRules::KeepWorldTransform,NAME_None);
+	UStaticMeshComponent* StaticMeshComponent = FindComponentByClass<UStaticMeshComponent>();
+	StaticMeshComponent->SetSimulatePhysics(false);
+	GetRootComponent()->AttachToComponent(AttachTo, FAttachmentTransformRules(EAttachmentRule::KeepWorld,false),NAME_None);
 }
 
 void APickupCube::Drop_Implementation()
 {
 	//TODO - Implement Drop Call
+	UStaticMeshComponent* StaticMeshComponent = FindComponentByClass<UStaticMeshComponent>();
+	StaticMeshComponent->SetSimulatePhysics(true);
 	DetachFromActor(FDetachmentTransformRules::KeepWorldTransform);
 }

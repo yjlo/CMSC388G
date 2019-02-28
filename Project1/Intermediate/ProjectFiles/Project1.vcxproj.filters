@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Project1.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{8581927B-3438-4EC2-A6FF-D292532637DA}</UniqueIdentifier>
+      <UniqueIdentifier>{833A5163-AA38-4BC2-B70E-A12E5BFEAC56}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Project1.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{18543CB2-16D0-449E-A7F0-71D3B28834EA}</UniqueIdentifier>
+      <UniqueIdentifier>{93B86177-CD4F-464B-87E5-72141665CF2E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Project1">
-      <UniqueIdentifier>{8BF61AFA-669B-4BEB-A6A1-6A9E3ED207C6}</UniqueIdentifier>
+      <UniqueIdentifier>{F93D857E-2504-4E2F-A4B3-F8E9A6EBB730}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Project1\CustomMotionController.cpp">
       <Filter>Source\Project1</Filter>

@@ -44,7 +44,7 @@ AActor* ACustomMotionController::GetActorNearHand()
 	float shortest_distance = 10000;
 	AActor* NearestOverlappingActor = nullptr;
 	for (AActor* OverlappingActor : OverlappingActorsOfSphere) {
-		bool ActorOfPickUpType = UKismetSystemLibrary::DoesImplementInterface(OverlappingActor,TSubclassOf<UCustomPickupActorInterface>());
+		bool ActorOfPickUpType = UKismetSystemLibrary::DoesImplementInterface(OverlappingActor,UCustomPickupActorInterface::StaticClass());
 		if (ActorOfPickUpType == true)
 		{
 			FVector OverlappingActorLocation = OverlappingActor->GetActorLocation();
