@@ -1,6 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "MyPawn.h"
+#include "Components/InputComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "GameFramework/Controller.h"
 
 // Sets default values
 AMyPawn::AMyPawn()
@@ -28,6 +31,30 @@ void AMyPawn::Tick(float DeltaTime)
 void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
-
+	PlayerInputComponent->BindAction("JumpTeleportMoveForward", IE_Pressed, this, &AMyPawn::JumpTeleportMoveForward);
+	PlayerInputComponent->BindAction("SnapLeft", IE_Pressed, this, &AMyPawn::SnapLeft);
+	PlayerInputComponent->BindAction("SnapRight", IE_Pressed, this, &AMyPawn::SnapRight);
 }
+
+void AMyPawn::JumpTeleportMoveForward()
+{
+	FVector ForwardVector = GetActorForwardVector();
+	AddMovementInput(ForwardVector, 10);
+}
+
+void AMyPawn::SnapLeft()
+{
+	FVector ForwardVector = GetActorForwardVector();
+	float radian = FMath::DegreesToRadians(45);
+	SetActorRotation(FRotator(0, radian,0), ETeleportType::None);
+}
+
+void AMyPawn::SnapRight()
+{
+	FVector ForwardVector = GetActorForwardVector();
+	float radian = FMath::DegreesToRadians(45);
+	SetActorRotation(FRotator(0, -radian, 0), ETeleportType::None);
+}
+
+
 

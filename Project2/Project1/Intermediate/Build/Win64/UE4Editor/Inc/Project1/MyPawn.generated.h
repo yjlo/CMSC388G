@@ -13,8 +13,30 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PROJECT1_MyPawn_generated_h
 
-#define Project1_Source_Project1_MyPawn_h_12_RPC_WRAPPERS
-#define Project1_Source_Project1_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define Project1_Source_Project1_MyPawn_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execJumpTeleportMoveForward) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->JumpTeleportMoveForward(Z_Param_value); \
+		P_NATIVE_END; \
+	}
+
+
+#define Project1_Source_Project1_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execJumpTeleportMoveForward) \
+	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
+		P_FINISH; \
+		P_NATIVE_BEGIN; \
+		P_THIS->JumpTeleportMoveForward(Z_Param_value); \
+		P_NATIVE_END; \
+	}
+
+
 #define Project1_Source_Project1_MyPawn_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyPawn(); \
