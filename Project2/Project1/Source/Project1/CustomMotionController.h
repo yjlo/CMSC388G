@@ -36,7 +36,13 @@ public:
 		AActor* GetActorNearHand();
 
 	UFUNCTION(BlueprintCallable, Category = "Teleportation")
-		virtual FTeleportDestinationTransform GetTeleportDestination(); /*PURE_VIRTUAL(ACustomMotionController, UStaticMeshComponent * TeleportCylinder = FindComponentByClass<UStaticMeshComponent>();
+		virtual FTeleportDestinationTransform GetTeleportDestination();
+
+	UFUNCTION(BlueprintCallable, Category = "Rotation Snapping")
+		void LeftSnap();
+	UFUNCTION(BlueprintCallable, Category = "Rotation Snapping")
+		void RightSnap();
+	/*PURE_VIRTUAL(ACustomMotionController, UStaticMeshComponent * TeleportCylinder = FindComponentByClass<UStaticMeshComponent>();
 	FVector TeleportLocation = TeleportCylinder->GetComponentLocation();
 
 	FVector DevicePosition;
@@ -55,8 +61,6 @@ public:
 	TeleportDestinationTransform.DestinationRotation = TeleportRotator;
 
 	return TeleportDestinationTransform;);*/
-
-	void SnappingRotation();
 
 };
 

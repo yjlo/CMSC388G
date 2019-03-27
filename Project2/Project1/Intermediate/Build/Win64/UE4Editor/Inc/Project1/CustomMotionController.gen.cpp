@@ -24,6 +24,8 @@ void EmptyLinkFunctionForGeneratedCodeCustomMotionController() {}
 	PROJECT1_API UFunction* Z_Construct_UFunction_ACustomMotionController_GetActorNearHand();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	PROJECT1_API UFunction* Z_Construct_UFunction_ACustomMotionController_GetTeleportDestination();
+	PROJECT1_API UFunction* Z_Construct_UFunction_ACustomMotionController_LeftSnap();
+	PROJECT1_API UFunction* Z_Construct_UFunction_ACustomMotionController_RightSnap();
 // End Cross Module References
 class UScriptStruct* FTeleportDestinationTransform::StaticStruct()
 {
@@ -124,6 +126,8 @@ static struct FScriptStruct_Project1_StaticRegisterNativesFTeleportDestinationTr
 			{ "ClearArc", &ACustomMotionController::execClearArc },
 			{ "GetActorNearHand", &ACustomMotionController::execGetActorNearHand },
 			{ "GetTeleportDestination", &ACustomMotionController::execGetTeleportDestination },
+			{ "LeftSnap", &ACustomMotionController::execLeftSnap },
+			{ "RightSnap", &ACustomMotionController::execRightSnap },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
@@ -216,6 +220,52 @@ static struct FScriptStruct_Project1_StaticRegisterNativesFTeleportDestinationTr
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ACustomMotionController_LeftSnap_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACustomMotionController_LeftSnap_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Rotation Snapping" },
+		{ "ModuleRelativePath", "CustomMotionController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACustomMotionController_LeftSnap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACustomMotionController, "LeftSnap", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACustomMotionController_LeftSnap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ACustomMotionController_LeftSnap_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACustomMotionController_LeftSnap()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACustomMotionController_LeftSnap_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACustomMotionController_RightSnap_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACustomMotionController_RightSnap_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Rotation Snapping" },
+		{ "ModuleRelativePath", "CustomMotionController.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACustomMotionController_RightSnap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACustomMotionController, "RightSnap", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x04020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACustomMotionController_RightSnap_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_ACustomMotionController_RightSnap_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACustomMotionController_RightSnap()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACustomMotionController_RightSnap_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ACustomMotionController_NoRegister()
 	{
 		return ACustomMotionController::StaticClass();
@@ -238,6 +288,8 @@ static struct FScriptStruct_Project1_StaticRegisterNativesFTeleportDestinationTr
 		{ &Z_Construct_UFunction_ACustomMotionController_ClearArc, "ClearArc" }, // 3287732461
 		{ &Z_Construct_UFunction_ACustomMotionController_GetActorNearHand, "GetActorNearHand" }, // 2099811019
 		{ &Z_Construct_UFunction_ACustomMotionController_GetTeleportDestination, "GetTeleportDestination" }, // 1506686481
+		{ &Z_Construct_UFunction_ACustomMotionController_LeftSnap, "LeftSnap" }, // 2340390966
+		{ &Z_Construct_UFunction_ACustomMotionController_RightSnap, "RightSnap" }, // 414074884
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACustomMotionController_Statics::Class_MetaDataParams[] = {
@@ -268,7 +320,7 @@ static struct FScriptStruct_Project1_StaticRegisterNativesFTeleportDestinationTr
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACustomMotionController, 408987631);
+	IMPLEMENT_CLASS(ACustomMotionController, 2968591955);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ACustomMotionController(Z_Construct_UClass_ACustomMotionController, &ACustomMotionController::StaticClass, TEXT("/Script/Project1"), TEXT("ACustomMotionController"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ACustomMotionController);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

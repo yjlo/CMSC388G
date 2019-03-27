@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Project1.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{221591E7-FA7F-420F-B148-6D70A3547C1B}</UniqueIdentifier>
+      <UniqueIdentifier>{E45F6460-8E98-4A83-A434-12DFCDFA44B6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Project1.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{9F2427BA-65C2-4118-88F9-32564108BB23}</UniqueIdentifier>
+      <UniqueIdentifier>{AD98044B-10C6-4530-83C3-D16D1DCE004C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Project1">
-      <UniqueIdentifier>{822F38F6-0644-4450-B857-E97D6BA57B5D}</UniqueIdentifier>
+      <UniqueIdentifier>{15577922-093B-4FA1-B34A-A897AD72A2A8}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Project1\CustomMotionController.cpp">
       <Filter>Source\Project1</Filter>
@@ -59,5 +59,15 @@
     <ClInclude Include="..\..\Source\Project1\Project1.h">
       <Filter>Source\Project1</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Project1\MyPawn.h">
+      <Filter>Source\Project1</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Project1\MyPawn.cpp">
+      <Filter>Source\Project1</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
