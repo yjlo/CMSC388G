@@ -83,13 +83,4 @@ FTeleportDestinationTransform ACustomMotionController::GetTeleportDestination()
 	return TeleportDestinationTransform;
 }
 
-void ACustomMotionController::LeftSnap()
-{
-	
-}
-
-void ACustomMotionController::RightSnap()
-{
-
-}
 

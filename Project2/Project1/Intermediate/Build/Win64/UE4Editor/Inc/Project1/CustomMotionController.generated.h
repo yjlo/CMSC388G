@@ -22,22 +22,6 @@ class AActor;
 
 #define Project1_Source_Project1_CustomMotionController_h_26_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execRightSnap) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->RightSnap(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execLeftSnap) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->LeftSnap(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execGetTeleportDestination) \
 	{ \
 		P_FINISH; \
@@ -64,22 +48,6 @@ class AActor;
 
 
 #define Project1_Source_Project1_CustomMotionController_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execRightSnap) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->RightSnap(); \
-		P_NATIVE_END; \
-	} \
- \
-	DECLARE_FUNCTION(execLeftSnap) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		P_THIS->LeftSnap(); \
-		P_NATIVE_END; \
-	} \
  \
 	DECLARE_FUNCTION(execGetTeleportDestination) \
 	{ \

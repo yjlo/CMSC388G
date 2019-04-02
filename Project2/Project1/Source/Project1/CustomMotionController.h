@@ -37,11 +37,6 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Teleportation")
 		virtual FTeleportDestinationTransform GetTeleportDestination();
-
-	UFUNCTION(BlueprintCallable, Category = "Rotation Snapping")
-		void LeftSnap();
-	UFUNCTION(BlueprintCallable, Category = "Rotation Snapping")
-		void RightSnap();
 	/*PURE_VIRTUAL(ACustomMotionController, UStaticMeshComponent * TeleportCylinder = FindComponentByClass<UStaticMeshComponent>();
 	FVector TeleportLocation = TeleportCylinder->GetComponentLocation();
 

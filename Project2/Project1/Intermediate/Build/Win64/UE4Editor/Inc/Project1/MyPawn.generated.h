@@ -17,10 +17,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
  \
 	DECLARE_FUNCTION(execJumpTeleportMoveForward) \
 	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->JumpTeleportMoveForward(Z_Param_value); \
+		P_THIS->JumpTeleportMoveForward(); \
 		P_NATIVE_END; \
 	}
 
@@ -29,10 +28,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
  \
 	DECLARE_FUNCTION(execJumpTeleportMoveForward) \
 	{ \
-		P_GET_PROPERTY(UFloatProperty,Z_Param_value); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->JumpTeleportMoveForward(Z_Param_value); \
+		P_THIS->JumpTeleportMoveForward(); \
 		P_NATIVE_END; \
 	}
 
