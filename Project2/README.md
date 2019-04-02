@@ -1,6 +1,6 @@
 # CMSC388G - Project 2
 ## Group Members: Yan-Jen Lo & Sophiya Chhetri
-##### [https://github.com/yjlo/CMSC388G/tree/master/Project2]
+##### https://github.com/yjlo/CMSC388G/tree/master/Project2
 Simulation Sickness Reduction Techniques Implemented (Using Project 1 as base)
 1) **Snap Rotation**
 
@@ -34,6 +34,6 @@ Simulation Sickness Reduction Techniques Implemented (Using Project 1 as base)
          - To interpolate the teleporation, we used tick and deltaTime to slow down the change of location to 2 seconds.
          - Used global variables to keep track of whether the pawn was currently in jump teleportation or not.
 
-**- How this reduces motion sickness?**
+     **- How this reduces motion sickness?**
 
          Short bursts of acceleration has been shown to signifigantly decrease motion sickness so a short 2 second burst of moving forward will help. Instead of allowing the player to freely move about the playing field.
