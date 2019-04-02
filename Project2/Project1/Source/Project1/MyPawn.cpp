@@ -55,7 +55,7 @@ void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAction("SnapRight", IE_Pressed, this, &AMyPawn::SnapRight);
 }
 
-/* To jump teleport forward, press B or Y */
+/* To jump teleport forward, press B or A */
 void AMyPawn::JumpTeleportMoveForward()
 {
 	isJumpTeleporting = true; // Tells tick, jump teleportation is happening
