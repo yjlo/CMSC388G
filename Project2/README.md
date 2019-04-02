@@ -7,6 +7,7 @@ Simulation Sickness Reduction Techniques Implemented (Using Project 1 as base)
    **- Input Required (Touch Controllers)**
 
          1) Press X to snap 45 degrees left
+
 	 2) Press Y to snap 45 degrees right
 
    **- Implementation**
