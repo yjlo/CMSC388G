@@ -1,0 +1,7 @@
+﻿  Compiling game modules for hot reload
+  Performing full C++ include scan (no include cache file)
+  Building 1 action with 8 processes...
+    [1/1] UE4Editor-Project1-4652.dll
+       Creating library C:\Users\VR Club\Desktop\CMSC388\CMSC388G\Project2\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-4652.suppressed.lib and object C:\Users\VR Club\Desktop\CMSC388\CMSC388G\Project2\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-4652.suppressed.exp
+  Deploying Project1Editor Win64 Development...
+  Total build time: 34.63 seconds (Parallel executor: 8.42 seconds)
