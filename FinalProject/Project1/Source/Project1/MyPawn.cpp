@@ -4,6 +4,7 @@
 #include "Components/InputComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/Controller.h"
+#include "Engine/Engine.h"
 
 /* Initial values for interpolating jump teleportation */
 bool isJumpTeleporting = false;
@@ -50,34 +51,33 @@ void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	/* Connecting buttons to actions (implemented functions) */
-	PlayerInputComponent->BindAction("JumpTeleportMoveForward", IE_Pressed, this, &AMyPawn::JumpTeleportMoveForward);
-	PlayerInputComponent->BindAction("SnapLeft", IE_Pressed, this, &AMyPawn::SnapLeft);
-	PlayerInputComponent->BindAction("SnapRight", IE_Pressed, this, &AMyPawn::SnapRight);
+	PlayerInputComponent->BindAxis("MotionControllerVertical", this, &AMyPawn::MoveVertical);
+	PlayerInputComponent->BindAxis("MotionControllerLeft", this, &AMyPawn::RotateLeft);
+	PlayerInputComponent->BindAxis("MotionControllerRight", this, &AMyPawn::RotateRight);
 }
 
 /* To jump teleport forward, press B or A */
-void AMyPawn::JumpTeleportMoveForward()
+void AMyPawn::MoveVertical(float AxisValue)
 {
-	isJumpTeleporting = true; // Tells tick, jump teleportation is happening
+	/*isJumpTeleporting = true; // Tells tick, jump teleportation is happening
 	FVector ActorRotation = GetActorRotation().Vector();
 	FVector ActorLocation = GetActorLocation();
-	NewActorLocation = ActorLocation + (ActorRotation * 300.0f); // Calculates new location, which is 300 units forward
+	NewActorLocation = ActorLocation + (ActorRotation * FMath::Clamp(AxisValue, 0.0f, 1.0f) * 100.0f); // Calculates new location, which is 300 units forward*/
+	FVector fwd = GetActorForwardVector();
+	//GEngine->AddOnScreenDebugMessage(-1, 1.f, FColor::Red, "FVector: " + FString::SanitizeFloat(AxisValue));
+	this->AddActorWorldOffset(fwd * (FMath::Clamp(AxisValue, -1.0f, 1.0f) * 5.0f));
 }
 
 /* To snap left, press X */
-void AMyPawn::SnapLeft()
+void AMyPawn::RotateLeft(float AxisValue)
 {
-	FRotator ForwardVector = GetActorRotation(); // Gets current pawn rotation
-	ForwardVector += FRotator(0, 45, 0); // Adds 45 degrees to current rotation
-	SetActorRotation(FRotator(ForwardVector.Pitch, ForwardVector.Yaw, ForwardVector.Roll), ETeleportType::None); // Initiate rotation change
+	this->AddActorWorldRotation(FRotator(0, FMath::Clamp(AxisValue,-1.0f,0.0f) * 5.0f, 0), false, nullptr, ETeleportType::None); // Initiate rotation change
 }
 
 /* To snap right, press Y */
-void AMyPawn::SnapRight()
+void AMyPawn::RotateRight(float AxisValue)
 {
-	FRotator ForwardVector = GetActorRotation(); // Gets current pawn rotation
-	ForwardVector += FRotator(0, -45, 0); // Subtracts 45 degrees to current rotation
-	SetActorRotation(FRotator(ForwardVector.Pitch, ForwardVector.Yaw, ForwardVector.Roll), ETeleportType::None); // Initiate rotation change
+	this->AddActorWorldRotation(FRotator(0, -FMath::Clamp(AxisValue, 1.0f, 0.0f) * 5.0f, 0), false, nullptr, ETeleportType::None); // Initiate rotation change
 }
 
 

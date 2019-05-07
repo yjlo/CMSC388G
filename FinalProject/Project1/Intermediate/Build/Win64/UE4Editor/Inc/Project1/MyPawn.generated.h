@@ -15,22 +15,24 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define Project1_Source_Project1_MyPawn_h_12_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execJumpTeleportMoveForward) \
+	DECLARE_FUNCTION(execMoveVertical) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_AxisValue); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->JumpTeleportMoveForward(); \
+		P_THIS->MoveVertical(Z_Param_AxisValue); \
 		P_NATIVE_END; \
 	}
 
 
 #define Project1_Source_Project1_MyPawn_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execJumpTeleportMoveForward) \
+	DECLARE_FUNCTION(execMoveVertical) \
 	{ \
+		P_GET_PROPERTY(UFloatProperty,Z_Param_AxisValue); \
 		P_FINISH; \
 		P_NATIVE_BEGIN; \
-		P_THIS->JumpTeleportMoveForward(); \
+		P_THIS->MoveVertical(Z_Param_AxisValue); \
 		P_NATIVE_END; \
 	}
 

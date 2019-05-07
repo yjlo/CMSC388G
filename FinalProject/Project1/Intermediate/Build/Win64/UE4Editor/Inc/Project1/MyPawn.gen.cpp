@@ -17,35 +17,45 @@ void EmptyLinkFunctionForGeneratedCodeMyPawn() {}
 	PROJECT1_API UClass* Z_Construct_UClass_AMyPawn();
 	ENGINE_API UClass* Z_Construct_UClass_APawn();
 	UPackage* Z_Construct_UPackage__Script_Project1();
-	PROJECT1_API UFunction* Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward();
+	PROJECT1_API UFunction* Z_Construct_UFunction_AMyPawn_MoveVertical();
 // End Cross Module References
 	void AMyPawn::StaticRegisterNativesAMyPawn()
 	{
 		UClass* Class = AMyPawn::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
-			{ "JumpTeleportMoveForward", &AMyPawn::execJumpTeleportMoveForward },
+			{ "MoveVertical", &AMyPawn::execMoveVertical },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, ARRAY_COUNT(Funcs));
 	}
-	struct Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward_Statics
+	struct Z_Construct_UFunction_AMyPawn_MoveVertical_Statics
 	{
+		struct MyPawn_eventMoveVertical_Parms
+		{
+			float AxisValue;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AxisValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::NewProp_AxisValue = { UE4CodeGen_Private::EPropertyClass::Float, "AxisValue", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x0010000000000080, 1, nullptr, STRUCT_OFFSET(MyPawn_eventMoveVertical_Parms, AxisValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::NewProp_AxisValue,
+	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward_Statics::Function_MetaDataParams[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "MyPawn.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyPawn, "JumpTeleportMoveForward", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, 0, nullptr, 0, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward_Statics::Function_MetaDataParams)) };
-	UFunction* Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward()
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMyPawn, "MoveVertical", RF_Public|RF_Transient|RF_MarkAsNative, nullptr, (EFunctionFlags)0x00020401, sizeof(MyPawn_eventMoveVertical_Parms), Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::PropPointers), 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::Function_MetaDataParams, ARRAY_COUNT(Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMyPawn_MoveVertical()
 	{
 		static UFunction* ReturnFunction = nullptr;
 		if (!ReturnFunction)
 		{
-			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward_Statics::FuncParams);
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMyPawn_MoveVertical_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -68,7 +78,7 @@ void EmptyLinkFunctionForGeneratedCodeMyPawn() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Project1,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMyPawn_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMyPawn_JumpTeleportMoveForward, "JumpTeleportMoveForward" }, // 2125415650
+		{ &Z_Construct_UFunction_AMyPawn_MoveVertical, "MoveVertical" }, // 316758500
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyPawn_Statics::Class_MetaDataParams[] = {
@@ -100,7 +110,7 @@ void EmptyLinkFunctionForGeneratedCodeMyPawn() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMyPawn, 348357917);
+	IMPLEMENT_CLASS(AMyPawn, 2898931633);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_AMyPawn(Z_Construct_UClass_AMyPawn, &AMyPawn::StaticClass, TEXT("/Script/Project1"), TEXT("AMyPawn"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AMyPawn);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

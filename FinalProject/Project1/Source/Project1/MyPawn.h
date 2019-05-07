@@ -27,7 +27,7 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	UFUNCTION()
-	void JumpTeleportMoveForward();
-	void SnapRight();
-	void SnapLeft();
+	void MoveVertical(float AxisValue);
+	void RotateLeft(float AxisValue);
+	void RotateRight(float AxisValue);
 };

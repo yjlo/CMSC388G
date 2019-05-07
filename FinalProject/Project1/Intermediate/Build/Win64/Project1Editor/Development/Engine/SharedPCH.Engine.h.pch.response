@@ -188,11 +188,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/I "C:\Users\vhv11\Desktop\Spring 2019\CMSC388G\CMSC388G\Project2\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine"
-/Yc"C:\Users\vhv11\Desktop\Spring 2019\CMSC388G\CMSC388G\Project2\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\vhv11\Desktop\Spring 2019\CMSC388G\CMSC388G\Project2\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"C:\Users\vhv11\Desktop\Spring 2019\CMSC388G\CMSC388G\Project2\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.cpp"
-/Fo"C:\Users\vhv11\Desktop\Spring 2019\CMSC388G\CMSC388G\Project2\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.obj"
+/I "D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine"
+/Yc"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
+/Fp"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.pch"
+"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.cpp"
+/Fo"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.obj"
 /TP
 /GR-
 /W4
