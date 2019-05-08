@@ -4,6 +4,7 @@
 #include "Components/InputComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "GameFramework/Controller.h"
+#include "Camera/CameraComponent.h"
 #include "Engine/Engine.h"
 
 /* Initial values for interpolating jump teleportation */
@@ -16,6 +17,11 @@ AMyPawn::AMyPawn()
 {
  	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+
+
+	Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("ActualCamera"));
+	Camera->SetupAttachment(RootComponent);
+
 
 }
 
@@ -71,13 +77,13 @@ void AMyPawn::MoveVertical(float AxisValue)
 /* To snap left, press X */
 void AMyPawn::RotateLeft(float AxisValue)
 {
-	this->AddActorWorldRotation(FRotator(0, FMath::Clamp(AxisValue,-1.0f,0.0f) * 5.0f, 0), false, nullptr, ETeleportType::None); // Initiate rotation change
+	this->AddActorWorldRotation(FRotator(0, FMath::Clamp(AxisValue,-1.0f,0.0f) * 2.0f, 0), false, nullptr, ETeleportType::None); // Initiate rotation change
 }
 
 /* To snap right, press Y */
 void AMyPawn::RotateRight(float AxisValue)
 {
-	this->AddActorWorldRotation(FRotator(0, -FMath::Clamp(AxisValue, 1.0f, 0.0f) * 5.0f, 0), false, nullptr, ETeleportType::None); // Initiate rotation change
+	this->AddActorWorldRotation(FRotator(0, FMath::Clamp(AxisValue, 0.0f, 1.0f) * 2.0f, 0), false, nullptr, ETeleportType::None); // Initiate rotation change
 }
 
 

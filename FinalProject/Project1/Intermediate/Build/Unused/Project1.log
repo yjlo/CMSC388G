@@ -1,7 +1,11 @@
-﻿  Compiling game modules for hot reload
-  Performing full C++ include scan (no include cache file)
-  Building 1 action with 8 processes...
-    [1/1] UE4Editor-Project1-4652.dll
-       Creating library C:\Users\VR Club\Desktop\CMSC388\CMSC388G\Project2\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-4652.suppressed.lib and object C:\Users\VR Club\Desktop\CMSC388\CMSC388G\Project2\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-4652.suppressed.exp
+﻿  Creating makefile for hot reloading Project1Editor (source directory changed)
+  Compiling game modules for hot reload
+  Using Visual Studio 2017 14.20.27508 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508) and Windows 10.0.17763.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 3 actions with 8 processes...
+    [1/3] MyPawn.cpp
+    [2/3] UE4Editor-Project1-9561.lib
+       Creating library C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-9561.lib and object C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-9561.exp
+    [3/3] UE4Editor-Project1-9561.dll
+       Creating library C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-9561.suppressed.lib and object C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\UE4Editor-Project1-9561.suppressed.exp
   Deploying Project1Editor Win64 Development...
-  Total build time: 34.63 seconds (Parallel executor: 8.42 seconds)
+  Total build time: 7.61 seconds (Parallel executor: 2.08 seconds)

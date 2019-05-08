@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Project1.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E45F6460-8E98-4A83-A434-12DFCDFA44B6}</UniqueIdentifier>
+      <UniqueIdentifier>{55E437E6-9FDC-4CD6-B368-E1409E276796}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Project1.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{AD98044B-10C6-4530-83C3-D16D1DCE004C}</UniqueIdentifier>
+      <UniqueIdentifier>{9B83B966-A06D-4237-AF94-F5ED1D21E0C7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Project1">
-      <UniqueIdentifier>{15577922-093B-4FA1-B34A-A897AD72A2A8}</UniqueIdentifier>
+      <UniqueIdentifier>{C36DF56A-AF8B-4F12-872F-07DE166CE128}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Project1\CustomMotionController.cpp">
       <Filter>Source\Project1</Filter>
@@ -42,6 +42,12 @@
       <Filter>Source\Project1</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\Project1\CustomPickupActorInterface.h">
+      <Filter>Source\Project1</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Project1\MyPawn.cpp">
+      <Filter>Source\Project1</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Project1\MyPawn.h">
       <Filter>Source\Project1</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Project1\PickupCube.cpp">
@@ -61,12 +67,12 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Source\Project1\MyPawn.h">
+    <ClInclude Include="..\..\Source\Project1\Target.h">
       <Filter>Source\Project1</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Source\Project1\MyPawn.cpp">
+    <ClCompile Include="..\..\Source\Project1\Target.cpp">
       <Filter>Source\Project1</Filter>
     </ClCompile>
   </ItemGroup>

@@ -412,20 +412,21 @@
 /I ThirdParty
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
-/I "D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Inc\Project1"
-/I "D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Source"
-/I "D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Source\Project1"
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Inc\Project1
+/I C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Source
+/I C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Source\Project1
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.20.27508\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
-/Yu"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
-/Fp"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.pch"
-"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Source\Project1\PickupCube.cpp"
-/FI"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\Definitions.Project1.h"
-/Fo"D:\Desktop Files\Spring 2019\CMSC388G\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\PickupCube.cpp.obj"
+/FI"C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
+/Yu"C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\Project1Editor\Development\Engine\SharedPCH.Engine.h.pch"
+"C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Source\Project1\PickupCube.cpp"
+/FI"C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\Definitions.Project1.h"
+/Fo"C:\Users\VR_Club\Desktop\CMSC388G\FinalProject\Project1\Intermediate\Build\Win64\UE4Editor\Development\Project1\PickupCube.cpp.obj"
 /TP
 /GR-
 /W4

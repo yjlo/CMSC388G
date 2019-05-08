@@ -30,4 +30,6 @@ public:
 	void MoveVertical(float AxisValue);
 	void RotateLeft(float AxisValue);
 	void RotateRight(float AxisValue);
+
+	class UCameraComponent* Camera;
 };
