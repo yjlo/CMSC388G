@@ -57,7 +57,10 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATarget); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ATarget)
 
 
-#define Project1_Source_Project1_Target_h_12_PRIVATE_PROPERTY_OFFSET
+#define Project1_Source_Project1_Target_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__MeshComponent() { return STRUCT_OFFSET(ATarget, MeshComponent); }
+
+
 #define Project1_Source_Project1_Target_h_9_PROLOG
 #define Project1_Source_Project1_Target_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

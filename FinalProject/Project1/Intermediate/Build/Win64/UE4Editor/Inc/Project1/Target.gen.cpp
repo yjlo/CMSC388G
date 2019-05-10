@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeTarget() {}
 	PROJECT1_API UClass* Z_Construct_UClass_ATarget();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Project1();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 // End Cross Module References
 	void ATarget::StaticRegisterNativesATarget()
 	{
@@ -31,6 +32,11 @@ void EmptyLinkFunctionForGeneratedCodeTarget() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MeshComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -44,6 +50,17 @@ void EmptyLinkFunctionForGeneratedCodeTarget() {}
 		{ "ModuleRelativePath", "Target.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATarget_Statics::NewProp_MeshComponent_MetaData[] = {
+		{ "Category", "Target" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Target.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATarget_Statics::NewProp_MeshComponent = { UE4CodeGen_Private::EPropertyClass::Object, "MeshComponent", RF_Public|RF_Transient|RF_MarkAsNative, (EPropertyFlags)0x00200800000a0009, 1, nullptr, STRUCT_OFFSET(ATarget, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATarget_Statics::NewProp_MeshComponent_MetaData, ARRAY_COUNT(Z_Construct_UClass_ATarget_Statics::NewProp_MeshComponent_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATarget_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATarget_Statics::NewProp_MeshComponent,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATarget_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATarget>::IsAbstract,
 	};
@@ -52,7 +69,7 @@ void EmptyLinkFunctionForGeneratedCodeTarget() {}
 		DependentSingletons, ARRAY_COUNT(DependentSingletons),
 		0x009000A0u,
 		nullptr, 0,
-		nullptr, 0,
+		Z_Construct_UClass_ATarget_Statics::PropPointers, ARRAY_COUNT(Z_Construct_UClass_ATarget_Statics::PropPointers),
 		nullptr,
 		&StaticCppClassTypeInfo,
 		nullptr, 0,
@@ -67,7 +84,7 @@ void EmptyLinkFunctionForGeneratedCodeTarget() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATarget, 3891652076);
+	IMPLEMENT_CLASS(ATarget, 2504188102);
 	static FCompiledInDefer Z_CompiledInDefer_UClass_ATarget(Z_Construct_UClass_ATarget, &ATarget::StaticClass, TEXT("/Script/Project1"), TEXT("ATarget"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ATarget);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

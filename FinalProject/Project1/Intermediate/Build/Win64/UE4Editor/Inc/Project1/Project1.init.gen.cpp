@@ -19,7 +19,7 @@ void EmptyLinkFunctionForGeneratedCodeProject1_init() {}
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/Project1",
 				PKG_CompiledIn | 0x00000000,
-				0x52124AA1,
+				0xFF0BA9FE,
 				0xDD92136C,
 				nullptr, 0,
 				METADATA_PARAMS(nullptr, 0)
