@@ -14,6 +14,6 @@ We used Project 2 as a base project
 
      **- Instead the shooter goes to the middle of the maze as the goal**
 
-     **- There is a monster in the middle, which we wanted to be animated but could not find a way to do that easily. However we have him make sounds (3D sound) **
+     **- There is a monster in the middle, which we wanted to be animated but could not find a way to do that easily. However we have him make sounds (3D sound)**
 
-     **- To escape you solve a riddle which is the 2D UI Component*
+     **- To escape you solve a riddle which is the 2D UI Component**
