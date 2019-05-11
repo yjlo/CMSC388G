@@ -1,3 +1,0 @@
-E:\CMSC388G\FinalProject\Project1\Source\Project1\Project1.Build.cs
-E:\CMSC388G\FinalProject\Project1\Source\Project1.Target.cs
-E:\CMSC388G\FinalProject\Project1\Source\Project1Editor.Target.cs
