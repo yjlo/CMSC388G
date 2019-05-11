@@ -1,44 +1,19 @@
-# CMSC388G - Project 2
+# CMSC388G - Final Project
 ## Group Members: Yan-Jen Lo & Sophiya Chhetri
-##### https://github.com/yjlo/CMSC388G/tree/master/Project2
-Simulation Sickness Reduction Techniques Implemented (Using Project 1 as base)
-1) **Snap Rotation**
+##### https://github.com/yjlo/CMSC388G/tree/master/FinalProject
+We used Project 2 as a base project
+1) **Difficulties**
 
-   **- Input Required (Touch Controllers)**
+   **- Collision: No matter what we did, the VR pawn went through walls. Eventually we ended up using the FirstPersonShooter instead**
 
-         - Press X to snap 45 degrees left
-         - Press Y to snap 45 degrees right
+   **- We originally wanted the maze to have gates that open and close based on triggers which would change the maze. That would have been out 3D sound component**
 
-   **- Implementation**
+   **- We also wanted some traps and to have lives and 2D UI to display the**
 
-         We decided that 45 degrees allows the player to view diagonals, forward, behind, and sides. 
-         Too little can seem like you barely moved and too much can seem too confusing as to where you snap to.
+2) **End Result**
 
-         - We simply used FRotators to detect the current rotation of the pawn
-         - +/- 45 degrees depending on whether you wanted to go left or right
+     **- Instead the shooter goes to the middle of the maze as the goal**
 
-   **- How this reduces motion sickness?**
+     **- There is a monster in the middle, which we wanted to be animated but could not find a way to do that easily. However we have him make sounds (3D sound) **
 
-         Quick movements similar to instant teleportation tones down the user not moving but the player in VR is rotating. 
-         Many other video games also utilize snap rotation so the feature will be familiar to most gamers.
-
-2) **Jump Teleportation**
-
-     **- Input Required (Touch Controllers)**
-
-         Press B or A to jump teleport forward
-
-     **- Implementation**
-
-         We simply wanted directly forward jump teleportation since the snap rotation offers quick access to all diagonal,
-         straight, and side-to-side views. Other directions and specific locations are handled by old teleportation still in place from project 1. 
-         The forward amount is 300 units.
-
-         - Using FRotator to capture the current rotation of the pawn and normalizing allows us to detect the correct forward direction to move the pawn
-         - To interpolate the teleporation, we used tick and deltaTime to slow down the change of location to 2 seconds.
-         - Used global variables to keep track of whether the pawn was currently in jump teleportation or not.
-
-     **- How this reduces motion sickness?**
-
-         Short bursts of acceleration has been shown to signifigantly decrease motion sickness so a short 2 second burst of moving forward will help. 
-         Instead of allowing the player to freely move about the playing field.
+     **- To escape you solve a riddle which is the 2D UI Component*
